@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style/decorate.css">
+<script type="text/javascript" src = "js/validation_leave_apply.js"></script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body {
+	background-color: hsla(89, 43%, 51%, 0.3);
+}
+
+.centered {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body style="background-image: url('imges/bitch.jpg')">
+
+	<div class="centered" style="float: center; width: 50%; margin: auto;">
+		<b><h1>Leave Apply</h1></b>
+		<table>
+			<form style="color: green" name = "leave_apply" onsubmit="return validation_Leave_Apply()"action="Check_forinsert" method="post">
+
+				<lable>UserName:</lable><br> <input type="text" name="username" autocomplete="off"
+					placeholder="username"> <br> <lable> Password:</lable><br> <input
+					type="text" name="password" autocomplete="off"
+					placeholder="password"> <br> <br>
+
+				
+					<input type="submit" value="SinIn">
+				
+
+			</form>
+		</table>
+	</div>
+
+</body>
+</html>

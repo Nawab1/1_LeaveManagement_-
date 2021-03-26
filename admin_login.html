@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src = "js/validation_leave_apply.js"></script>
+
+<style>
+#con {
+margin-top:100px;
+margin-left: 450px;
+
+}
+input {
+height: 20px;
+width: 200px;
+border-radius: 10px;
+text-align: center;	
+}
+
+ #bt,#btn,#sp {
+background: #234e;
+color:white;
+}
+
+</style>
+
+</head>
+<body style = "background-color:orange">
+
+     <div id="con">
+     <form name = "admin" action = "Admin_login_servletBo" method = "post" >
+   		<h3>Login Admin</h3>
+         <label>UserName:</label><br>
+         <input type = "text"  name = "username_admin" autocomplete="off" placeholder = "username"><br>
+         
+        
+        <label> Password:</label><br>
+        <input type = "text"  name="password_admin" autocomplete="off" placeholder = "password"><br>
+         <br> 
+         <input id="bt" type ="submit" value="Login">
+       
+     </form>
+ </div>
+       
+</body>
+</html>
