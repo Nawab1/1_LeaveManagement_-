@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style/decorate.css">
+<script type="text/javascript" src = "js/validation_leave_form.js"></script>
+<script type="text/javascript" src = "js/datedis.js"></script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+#Shift1 {
+margin-top:40px;
+margin-left: 450px;
+
+}
+textarea {
+	width:200px;
+}
+body {
+	background: orange;
+}
+button {
+background: #234e;
+color: white;
+}
+.c {
+background: #234e;
+color:white;
+}
+a {
+color: white;}
+</style>
+</head>
+<body>
+<div id="Shift1">
+	<form name = "leave_apply" action="Leave_apply_servletBo" onsubmit="return validation_leave()" method="post">
+		<lable>From</lable>
+		<br>
+		<input type="date" id="d1" name="fdate" autocomplete="off"> <br>
+		
+		<lable>To</lable>
+		<br>
+		<input type="date" name="tdate" autocomplete="off"> <br>
+	    <label>Reason</label><br>
+		<textarea rows="4" cols="20" name="comment" autocomplete="off">
+         Enter text here...</textarea>
+		<br>
+		<br>
+		 <input class="c" id="h" type="submit" value="Leave Apply">
+	</form>
+	<br>
+	<button id="btn" >
+		<a href='emp_view.jsp'>view_table</a>
+	</button>
+	<br><br>
+	<button id="btn" >
+		<a href='Logout_servletBo'>logout</a>
+	</button>
+</div>
+</body>
+</html>

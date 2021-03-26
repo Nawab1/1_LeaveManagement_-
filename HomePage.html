@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="style/decorate.css">
+ <script src="js/validation_regis.js"></script> 
+<title>Employee Login</title>
+<style type="text/css">
+body {
+	background: orange;
+	text-align: center;
+}
+#bt,#btn,#sp {
+background: #234e;
+color:white;
+}
+a {
+text-decoration: none;
+color: white;
+}
+</style>
+</head>
+<body ">
+<div class="center"   >
+<b><h1 style = "color:#234e">Registration</h1></b>
+
+     <form name = 'registration' action = "Emp_signup" onsubmit="return validation()" method = "post" >
+     	<label>First Name:</label><br>
+         <input type = "text" name = "name" autocomplete="off" placeholder = "FirstName"><br>
+         <label>Last Name:</label><br>
+    	 <input type = "text" name = "last" autocomplete="off" placeholder = "lastName"><br>
+         <label>Department:</label><br>
+         <input type = "text" name = "dpment" autocomplete="off" placeholder = "Department"><br>
+         <label>DOB:</label><br>
+         <input type = "date" name="dob" autocomplete="off" placeholder = "dob"><br>
+         <label>UserName:</label><br>
+         <input type = "text" name = "username" autocomplete="off" placeholder = "username"><br>
+         <label>Password:</label><br>
+         <input type = "text" name="password" autocomplete="off" placeholder = "password"><br><br> 
+          
+         <input id = "bt" type ="submit" value="SignUp"><br>
+       
+     </form>
+   <br><button id="sp"><a href = "leave_apply.html">apply if you have an account</a></button>
+    <button id="btn"> <a href = "admin_login.html">admin</a> </button>
+
+ </div>
+ 
+</body>
+</html>
